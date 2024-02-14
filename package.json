@@ -1,0 +1,20 @@
+{
+  "name": "the-office",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@gathertown/gather-game-client": "^43.0.1",
+    "@vercel/blob": "^0.22.0",
+    "dotenv": "^16.4.4",
+    "isomorphic-ws": "^4.0.1",
+    "node-html-to-image": "^4.0.0",
+    "ws": "^8.2.1"
+  }
+}
