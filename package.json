@@ -9,22 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.0",
     "@gathertown/gather-game-client": "^43.0.1",
     "@vercel/blob": "^0.22.0",
     "dotenv": "^16.4.4",
     "isomorphic-ws": "^4.0.1",
+    "next": "14.1.0",
     "node-html-to-image": "^4.0.0",
+    "prettier": "^3.2.5",
+    "react": "^18",
+    "react-dom": "^18",
     "ws": "^8.2.1"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.1.0"
+    "eslint-config-next": "14.1.0",
+    "typescript": "^5"
   }
 }
