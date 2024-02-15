@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config({ path: '../.env' })
 
 const { Game } = require('@gathertown/gather-game-client');
 global.WebSocket = require("isomorphic-ws");
@@ -13,12 +13,12 @@ const GATHER_OJBECTS_ENUM = {
 }
 
 const GATHER_MAPS_ENUM = {
-    OFFICE_ROOF : 'office-roof',    
+    OFFICE_ROOF : 'office-roof',
 }
 
 /**
  * References:
- * 
+ *
  * The Forest by Gather (Dynamic Map) - https://github.com/gathertown/the-forest?tab=readme-ov-file
  * Gather WS API - https://gathertown.notion.site/Gather-Websocket-API-bf2d5d4526db412590c3579c36141063
  * Game Client - http://gather-game-client-docs.s3-website-us-west-2.amazonaws.com/classes/Game.html
@@ -70,7 +70,7 @@ game.subscribeToEvent(
     ({ playerInteractsWithObject: { key } }, _context) => {
         console.log(`tree ${key} chopped!`);
     });
-    
+
 let i = 0;
 const maxI = 10;
 const width = 300;
@@ -115,7 +115,7 @@ setInterval(() => {
                 cacheControlMaxAge: 0
             }).then((result) => {
                 console.log(result.url);
-    
+
                 game.sendAction({
                     $case: "mapUpdateObjects",
                     mapUpdateObjects: {

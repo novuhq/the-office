@@ -1,20 +1,30 @@
 {
-  "name": "the-office",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@novu/the-office",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.1.0",
     "@gathertown/gather-game-client": "^43.0.1",
     "@vercel/blob": "^0.22.0",
     "dotenv": "^16.4.4",
     "isomorphic-ws": "^4.0.1",
     "node-html-to-image": "^4.0.0",
     "ws": "^8.2.1"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0"
   }
 }
