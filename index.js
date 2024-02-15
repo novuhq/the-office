@@ -8,6 +8,14 @@ const fs = require('fs');
 
 const API_KEY = process.env.GATHER_API_KEY;
 
+/**
+ * References:
+ * 
+ * The Forest by Gather (Dynamic Map) - https://github.com/gathertown/the-forest?tab=readme-ov-file
+ * Gather WS API - https://gathertown.notion.site/Gather-Websocket-API-bf2d5d4526db412590c3579c36141063
+ * Game Client - http://gather-game-client-docs.s3-website-us-west-2.amazonaws.com/classes/Game.html
+ */
+
 // https://app.gather.town/app/m0H2UL1P5jXUMnF4/test-dima
 // create the game object, giving it your spaceId and API key of your choice in this weird way
 const game = new Game(process.env.GATHER_SPACE_ID, () => Promise.resolve({ apiKey: API_KEY }));
@@ -67,7 +75,7 @@ nodeHtmlToImage({
     </head>
     <body style="padding-left: 1px; padding-top: 16px;  background: transparent">
         <div style="background: white; display: block; padding: 10px;">
-            Hello Richard!
+            Hello David!
         </div>
     </body>
   </html>
